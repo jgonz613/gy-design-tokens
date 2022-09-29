@@ -97,6 +97,19 @@ module.exports = {
     ],
     TransformGroup: [
         {
+            name: 'scss-custom',
+            transforms: [
+                'attribute/cti',
+                'attribute/identity',
+                'name/identity/kabab',
+                'value/quote-url',
+                'size/pxToEm',
+                'size/pxToRem',
+                'size/line-height/unitless',
+                'color/css',
+            ],
+        },
+        {
             name: 'css-custom',
             transforms: [
                 'attribute/cti',

@@ -1,18 +1,18 @@
 {
-  "name": "@publicissapient/design-tokens-starter",
-  "version": "0.0.0-development",
-  "description": "Design Tokens Starter Project",
-  "author": "Ryan Fitzer",
+  "name": "test-gy-design-tokens",
+  "version": "1.0.1",
+  "description": "GY Design Tokens",
+  "author": "Joshua Gonzalez",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/PublicisSapient/design-tokens-starter.git"
+    "url": "git+https://github.com/jgonz613/gy-design-tokens.git"
   },
   "engines": {
     "node": ">=18.0.0"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
     "build": "npm run tokens && npm run tailwind && npm run pkg && npm run docs",

@@ -21,6 +21,23 @@ const createOptions = (brand, theme, { src, build }) => {
     }
 
     config.platforms = {
+        'SCSS variables': {
+            transformGroup: 'scss-custom',
+            buildPath: build,
+            files: [
+                {
+                    format: `scss/variables`,
+                    destination: `_variables.scss`,
+                    filter: checkAttr([
+                        ['type', 'face', false],
+                        ['type', 'track', false],
+                        ['category', 'viewport', false],
+                        ['category', 'utility', false],
+                        ['category', 'asset', false],
+                    ]),
+                },
+            ],
+        },
         'CSS variables': {
             transformGroup: 'css-custom',
             buildPath: build,
