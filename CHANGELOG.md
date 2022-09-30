@@ -1,5 +1,11 @@
 # Changelog | Design Tokens Starter
 
+## [v1.2.0](https://github.com/jgonz613/gy-design-tokens/compare/v1.1.0...v1.2.0)
+
+2022-09-30
+
+- Update: Update Tokens ([832ac3b](https://github.com/jgonz613/gy-design-tokens/commit/832ac3b)) (jgonz613)
+
 ## [v1.1.0](https://github.com/jgonz613/gy-design-tokens/compare/v1.0.0...v1.1.0)
 
 2022-09-30
