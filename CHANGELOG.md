@@ -1,5 +1,13 @@
 # Changelog | Design Tokens Starter
 
+## [v1.1.0](https://github.com/jgonz613/gy-design-tokens/compare/v1.0.0...v1.1.0)
+
+2022-09-30
+
+- Update: Update Tokens ([9886781](https://github.com/jgonz613/gy-design-tokens/commit/9886781)) (jgonz613)
+- Update: Update Tokens ([878a3f3](https://github.com/jgonz613/gy-design-tokens/commit/878a3f3)) (jgonz613)
+- Update: Update Tokens ([4fdbc90](https://github.com/jgonz613/gy-design-tokens/commit/4fdbc90)) (jgonz613)
+
 ## [v1.0.0](https://github.com/PublicisSapient/design-tokens-starter/compare/...v1.0.0)
 
 2022-08-26
