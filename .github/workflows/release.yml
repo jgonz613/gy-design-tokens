@@ -20,18 +20,6 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
 
-      - run: echo ${{ steps.semantic.outputs.release-version }}
-      
-      - run: |
-          echo $RELEASE_VERSION
-          echo $RELEASE_MAJOR
-          echo $RELEASE_MINOR
-          echo $RELEASE_PATCH
-
-      - run: echo "$OUTPUTS"
-        env:
-          OUTPUTS: ${{ toJson(steps.semantic.outputs) }}
-
       - name: Setup Node Environment
         uses: actions/setup-node@v2
         with:
