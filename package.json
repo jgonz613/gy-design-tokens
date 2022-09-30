@@ -1,8 +1,8 @@
 {
-  "name": "test-gy-design-tokens",
-  "version": "1.0.5",
-  "description": "GY Design Tokens",
-  "author": "Joshua Gonzalez",
+  "name": "@svc-apac-goodyear/design-tokens",
+  "version": "1.0.7",
+  "description": "Design Tokens",
+  "author": "Publicis Sapient",
   "license": "MIT",
   "repository": {
     "type": "git",
