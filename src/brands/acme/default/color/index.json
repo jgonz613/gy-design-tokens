@@ -4,8 +4,8 @@
       "base": { "value": "#fe414d" },
       "light": { "value": "#ff7979" },
       "dark": { "value": "#c40025" },
-      "dark-1": { "value": "#ffcccc" },
-      "dark-2": { "value": "#ffccff" }
+      "dark-1": { "value": "orange" },
+      "dark-2": { "value": "yellow" }
     },
     "secondary": {
       "base": { "value": "#079fff" },
