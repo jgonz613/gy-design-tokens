@@ -23,10 +23,10 @@ jobs:
       - run: echo ${{ steps.semantic.outputs.release-version }}
       
       - run: |
-        echo $RELEASE_VERSION
-        echo $RELEASE_MAJOR
-        echo $RELEASE_MINOR
-        echo $RELEASE_PATCH
+          echo $RELEASE_VERSION
+          echo $RELEASE_MAJOR
+          echo $RELEASE_MINOR
+          echo $RELEASE_PATCH
 
       - run: echo "$OUTPUTS"
         env:
