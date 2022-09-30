@@ -42,11 +42,11 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_PAT }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PAT }}
 
-      - name: Create Distribution
-        if: ${{ steps.package.outputs.new-release-published == 'true' }}
-        run: npm run docs && npm run cdn
-        env:
-          NPM_PKG_VERSION: ${{ steps.package.outputs.release-version }}
+      # - name: Create Distribution
+      #   if: ${{ steps.package.outputs.new-release-published == 'true' }}
+      #   run: npm run docs && npm run cdn
+      #   env:
+      #     NPM_PKG_VERSION: ${{ steps.package.outputs.release-version }}
 
       # Docs: https://github.com/sebastianpopp/ftp-action#readme
       # `lftp` options: https://lftp.yar.ru/lftp-man.html
