@@ -10,20 +10,20 @@ All brands are contained in a single package.
 See the Github Package Registry requirements for [installing a package](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry#installing-a-package) into your project.
 
 ```shell
-npm install @publicissapient/design-tokens-starter
+npm install @svc-apac-goodyear/design-tokens
 ```
 
 Use one of the following path structures for importing files:
 
 ```
-@publicissapient/design-tokens-starter/<brand>/<file>
-@publicissapient/design-tokens-starter/<brand>/<theme>/<file>
+@svc-apac-goodyear/design-tokens/<brand>/<file>
 ```
 
 ## Usage
 
 Each brand will contain the same files. Directory/file naming conventions use [kebab-case](<https://en.wikipedia.org/wiki/Naming_convention_(programming)#Delimiter-separated_words>).
 
+- `variables.scss`: SCSS variables.
 - `variables.css`: CSS variables.
 - `variables.js`: JavaScript variables.
 - `custom-media.css: `[Custom media query variables](https://drafts.csswg.org/mediaqueries-5/#custom-mq)
