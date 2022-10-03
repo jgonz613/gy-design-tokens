@@ -51,11 +51,25 @@ const propConfig = {
  * @returns {string}
  */
 module.exports = ({ dictionary }) => {
-    const trackURL = dictionary.properties.font.track.url.value;
+    // const trackURL = dictionary.properties.font.track.url.value;
+    const trackURL =
+        !dictionary ||
+        !dictionary.properties ||
+        !dictionary.properties.font ||
+        !dictionary.properties.font.track ||
+        !dictionary.properties.font.track.url ||
+        !dictionary.properties.font.track.url.value
+            ? ''
+            : dictionary.properties.font.track.url.value;
     const track = trackURL ? `@import url("${trackURL}");\n` : '';
     const configKeys = Object.keys(propConfig);
     const configValues = Object.values(propConfig);
-    const fontGroups = Object.values(dictionary.properties.font.face);
+    const fontGroups =
+        dictionary.properties &&
+        dictionary.properties.font &&
+        dictionary.properties.font.face
+            ? Object.values(dictionary.properties.font.face)
+            : [];
     const groupVariants = fontGroups.reduce((acuum, group) => {
         acuum.push(...Object.values(group));
         return acuum;

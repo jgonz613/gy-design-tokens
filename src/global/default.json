@@ -1,0 +1,14 @@
+{
+  "color": {
+    "brand": {
+      "primary": {
+        "value": "#ffcccc",
+        "type": "color"
+      },
+      "globalonly": {
+        "value": "#ccffcc",
+        "type": "color"
+      }
+    }
+  }
+}

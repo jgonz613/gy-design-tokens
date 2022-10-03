@@ -51,6 +51,24 @@ module.exports = {
             nameStart: 'type',
         },
     },
+    breakpoint: {
+        default: {
+            prefix: 'breakpoint',
+            nameStart: 'item',
+        },
+    },
+    spacing: {
+        default: {
+            prefix: 'spacing',
+            nameStart: 'item',
+        },
+    },
+    opacity: {
+        default: {
+            prefix: 'opacity',
+            nameStart: 'item',
+        },
+    },
     effect: {
         'box-shadow': {
             prefix: 'shadow',
@@ -60,15 +78,75 @@ module.exports = {
         face: {
             prefix: 'font',
             exports: {
-                vars: false,
+                vars: true,
             },
         },
         family: {
-            prefix: 'font',
+            prefix: 'font-family',
+            default: {
+                nameStart: 'item',
+            },
+        },
+        weight: {
+            prefix: 'font-weight',
+            default: {
+                nameStart: 'item',
+            },
+        },
+        size: {
+            prefix: 'font-size',
+            default: {
+                nameStart: 'item',
+            },
+        },
+        textCase: {
+            prefix: 'font-text-case',
+            default: {
+                nameStart: 'item',
+            },
+        },
+        textDecoration: {
+            prefix: 'font-text-decoration',
+            default: {
+                nameStart: 'item',
+            },
+        },
+        letterSpacing: {
+            prefix: 'font-letter-spacing',
+            default: {
+                nameStart: 'item',
+            },
+        },
+        paragraphSpacing: {
+            prefix: 'font-paragraph-spacing',
+            default: {
+                nameStart: 'item',
+            },
+        },
+        lineHeights: {
+            prefix: 'font-line-heights',
+            default: {
+                nameStart: 'item',
+            },
         },
         track: {
             prefix: 'font',
             nameStart: 'type',
+        },
+    },
+
+    heading: {
+        H1: {
+            prefix: 'heading-h1',
+            default: {
+                nameStart: 'item',
+            },
+            fontFamiliy: {
+                prefix: 'font-family',
+                default: {
+                    nameStart: 'item',
+                },
+            },
         },
     },
     size: {

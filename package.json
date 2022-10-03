@@ -15,7 +15,8 @@
     "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
-    "build": "npm run tokens && npm run tailwind && npm run pkg && npm run docs",
+    "build": "npm run tokens && npm run pkg && npm run docs",
+    "buildold": "npm run tokens && npm run tailwind && npm run pkg && npm run docs",
     "tokens": "node scripts/style-dictionary",
     "tailwind": "node scripts/tailwind",
     "pkg": "node scripts/pkg",

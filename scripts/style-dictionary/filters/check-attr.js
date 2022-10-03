@@ -31,9 +31,11 @@ module.exports = (attr, expected, cond = true) => {
 
     return (prop) => {
         if (Array.isArray(attr)) {
-            return attr.every(([attr, expected, cond = true]) =>
-                transform(prop.attributes[attr], expected, cond)
-            );
+            return attr.every(([attr, expected, cond = true]) => {
+                if (prop.attributes && prop.attributes[attr]) {
+                    return transform(prop.attributes[attr], expected, cond);
+                }
+            });
         }
 
         return transform(prop.attributes[attr], expected, cond);
