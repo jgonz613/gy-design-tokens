@@ -135,20 +135,19 @@ module.exports = {
         },
     },
 
-    heading: {
-        H1: {
-            prefix: 'heading-h1',
-            default: {
-                nameStart: 'item',
-            },
-            fontFamiliy: {
-                prefix: 'font-family',
-                default: {
-                    nameStart: 'item',
-                },
-            },
-        },
+    typography: {
+        heading: { prefix: 'heading' },
+        subtitle: { prefix: 'subtitle' },
+        paragraph: { prefix: 'paragraph' },
+        inlineLink: { prefix: 'inline-link' },
     },
+
+    ui: {
+        buttonText: { prefix: 'button-text' },
+        largeCta: { prefix: 'large-cta' },
+        smallCta: { prefix: 'small-cta' },
+    },
+
     size: {
         font: {
             prefix: 'text',
